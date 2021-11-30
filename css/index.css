@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Brush Script MT';
+  src: url("font/BrushScriptMT.woff2") format("woff2"), url("font/BrushScriptMT.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
 html, body {
   margin: 0;
 }
@@ -152,6 +160,7 @@ footer {
 
 .work h2 {
   font-size: 54px;
+  font-family: 'Brush Script MT';
 }
 
 .work > p {
@@ -200,7 +209,7 @@ footer {
 
 .banner {
   text-align: center;
-  padding: 3% 0;
+  padding: 100px 0;
 }
 
 .banner a {
@@ -228,7 +237,7 @@ footer {
 }
 
 .contact {
-  padding: 5% 0;
+  padding: 100px 0;
   text-align: center;
   background-color: #222;
 }

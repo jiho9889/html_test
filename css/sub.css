@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Brush Script MT';
+  src: url("font/BrushScriptMT.woff2") format("woff2"), url("font/BrushScriptMT.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
 html, body {
   margin: 0;
 }
@@ -77,46 +85,278 @@ footer {
   text-align: center;
 }
 
-.sub_visual {
+.visual > img {
   width: 100%;
 }
 
-.sub_visual img {
-  width: 100%;
-  height: 100%;
-}
-
-article {
-  text-align: center;
-  width: 70%;
+.service {
   padding: 100px 0;
+  text-align: center;
 }
 
-article h2 {
+.service h2 {
   font-size: 54px;
+  font-family: 'Brush Script MT';
 }
 
-article ul {
+.service > p {
+  margin: 1% 0 5%;
+}
+
+.service ul {
+  width: 70%;
+  margin: 60px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.service ul li {
+  width: 30%;
+}
+
+.service ul li::before {
+  content: '';
+  width: 53px;
+  height: 53px;
+  display: block;
+  margin: 5% auto;
+}
+
+.service ul li b {
+  font-weight: bold;
+}
+
+.service ul li p {
+  color: #555;
+  line-height: 1.6;
+  margin-top: 2%;
+}
+
+.service ul li:nth-child(1)::before {
+  background: url("../img/ic_01.png") no-repeat;
+}
+
+.service ul li:nth-child(2)::before {
+  background: url("../img/ic_02.png") no-repeat;
+}
+
+.service ul li:nth-child(3)::before {
+  background: url("../img/ic_03.png") no-repeat;
+}
+
+.about {
+  padding: 100px 0;
+  background: #f2f2f1;
+}
+
+.about .profile {
+  width: 70%;
   margin: 0 auto;
-  padding: 10% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
-article ul li {
-  width: 32%;
-  margin-bottom: 2%;
+.about .profile .left {
+  width: 40%;
 }
 
-article ul li P > img {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #fed136;
+.about .profile .right {
+  width: 50%;
+}
+
+.about .profile .right h2 {
+  font-size: 54px;
+  font-family: 'Brush Script MT';
+}
+
+.about .profile .right > p {
+  margin: 1% 0 5%;
+}
+
+.about .profile .right ul li {
+  margin-bottom: 20px;
+}
+
+.about .profile .right ul li > p {
+  background-color: #ddd;
+}
+
+.about .profile .right ul li > p > span {
+  background: #fed136;
+  color: #fff;
+  text-align: right;
+  padding: 1%;
+  display: block;
+}
+
+.about .profile .right ul li:nth-child(1) > p > span {
+  width: 90%;
+}
+
+.about .profile .right ul li:nth-child(2) > p > span {
+  width: 70%;
+}
+
+.about .profile .right ul li:nth-child(3) > p > span {
+  width: 90%;
+}
+
+.about .profile .right ul li:nth-child(4) > p > span {
+  width: 40%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .visual > img {
+    width: 100%;
+  }
+  .service {
+    padding: 40px 0;
+    text-align: center;
+  }
+  .service h2 {
+    font-size: 34px;
+    font-family: 'Brush Script MT';
+  }
+  .service > p {
+    margin: 1% 0 5%;
+  }
+  .service ul {
+    width: 70%;
+    margin: 60px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .service ul li {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .service ul li::before {
+    content: '';
+    width: 53px;
+    height: 53px;
+    display: block;
+    margin: 5% auto;
+  }
+  .service ul li b {
+    font-weight: bold;
+  }
+  .service ul li p {
+    color: #555;
+    line-height: 1.6;
+    margin-top: 2%;
+  }
+  .service ul li:nth-child(1)::before {
+    background: url("../img/ic_01.png") no-repeat;
+  }
+  .service ul li:nth-child(2)::before {
+    background: url("../img/ic_02.png") no-repeat;
+  }
+  .service ul li:nth-child(3)::before {
+    background: url("../img/ic_03.png") no-repeat;
+  }
+  .about {
+    padding: 40px 0;
+    background: #f2f2f1;
+  }
+  .about .profile {
+    width: 70%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .about .profile .left {
+    width: 100%;
+  }
+  .about .profile .left img {
+    width: 100%;
+  }
+  .about .profile .right {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .about .profile .right h2 {
+    font-size: 34px;
+    font-family: 'Brush Script MT';
+  }
+  .about .profile .right > p {
+    margin: 1% 0 5%;
+  }
+  .about .profile .right ul li {
+    margin-bottom: 20px;
+  }
+  .about .profile .right ul li > p {
+    background-color: #ddd;
+  }
+  .about .profile .right ul li > p > span {
+    background: #fed136;
+    color: #fff;
+    text-align: right;
+    padding: 1%;
+    display: block;
+  }
+  .about .profile .right ul li:nth-child(1) > p > span {
+    width: 90%;
+  }
+  .about .profile .right ul li:nth-child(2) > p > span {
+    width: 70%;
+  }
+  .about .profile .right ul li:nth-child(3) > p > span {
+    width: 90%;
+  }
+  .about .profile .right ul li:nth-child(4) > p > span {
+    width: 40%;
+  }
 }
 /*# sourceMappingURL=sub.css.map */
