@@ -1,0 +1,36 @@
+@import '_common.scss';
+
+
+
+.sub_visual{
+    width:100%;
+    img{width: 100%; height:100%;}
+}
+
+article{
+    text-align: center;
+    width: 70%;
+    padding:100px 0;
+    h2{
+       
+        font-size: $title;
+    }
+    p{}
+    ul{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin:0 auto;
+        padding:10% 0;
+        li{
+            width:32%;
+            margin-bottom:2%;
+            p{}
+            P>img{
+                width: 50px; height: 50px;
+                border: 1px solid #fed136;
+            }
+            p>small{}
+        }
+    }
+}
